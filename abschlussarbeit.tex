@@ -1,0 +1,179 @@
+% Art des dokuments (Hier: Abschlussarbeit)
+\documentclass{agasthesis}
+
+% Für Titelblatt
+\usepackage{geometry}
+\usepackage{xcolor}
+
+\usepackage{amsmath}
+\usepackage[some]{background}
+
+% Andere
+\usepackage[latin1]{inputenc}
+%\usepackage[ngerman]{babel}
+
+\usepackage{float}
+
+% Bilder einfügen möglich
+\usepackage{graphicx}
+
+% Seiten rotieren
+\usepackage{rotating}
+
+% Footnotes starten mit 1 auf jeder Seite
+\usepackage[perpage]{footmisc}
+
+\usepackage{hypcap}
+
+% EMail klickbar
+\usepackage{url}
+\usepackage{setspace}
+
+% Tabellen
+\usepackage{booktabs}
+\usepackage{array} % for extrarowheight
+
+% EPS-Grafiken in pdf umwandeln
+\usepackage{epstopdf}
+
+% Kurze Anführungszeichen erlauben
+%\shorthandoff{"}
+
+% th, z.B. für 50th
+\usepackage[super]{nth}
+
+\begin{document}
+
+% Hier Titelseite einfügen
+\input{titlepage}
+
+% Ab hier: 1.5-facher Zeilenabstand
+\setstretch{1.5}
+
+\section*{Kurzfassung}
+Hierhin kommt die deutsche Kurzfassung. Tipp: Erst am Ende schreiben.
+
+\section*{Abstract}
+Hierhin kommt die englische Kurzfassung. Tipp: Erst am Ende schreiben.
+
+\vspace{2em}
+\noindent \textbf{Stichwörter:} Wort 1, Wort 2, Wort 3
+
+\newpage
+
+%------------------------------------------------------------------------------------------------
+
+\subsection*{Erklärung}
+Ich versichere, dass ich die vorliegende Arbeit selbständig verfasst
+und keine anderen als die angegebenen Quellen und Hilfsmittel benutzt habe
+und dass die Arbeit
+in gleicher oder ähnlicher Form noch keiner anderen Prüfungsbehörde
+vorgelegen hat und von dieser als Teil einer Prüfungsleistung
+angenommen wurde. Alle Ausführungen, die wörtlich oder sinngemäß
+übernommen wurden, sind als solche gekennzeichnet.
+\\[10mm]
+\noindent
+\begin{tabular}{@{}p{0.82\linewidth}@{\hspace*{2ex}}r@{\hspace*{2ex}}r}
+Mit der Einstellung dieser Arbeit in die Bibliothek bin ich einverstanden.
+& ja $\boxtimes$ & nein $\square$ \\[2em] %% change $\square$ to $\boxtimes$ to make a selection
+Der Veröffentlichung dieser Arbeit im Internet stimme ich zu.
+& ja $\square$ & nein $\boxtimes$ \\
+\end{tabular}
+\\[20mm]
+
+\noindent
+Koblenz, den \today \\[10mm]
+
+\newpage
+
+\definecolor{dark-blue}{rgb}{0,0,0}
+
+\tableofcontents
+
+% Abkürzungsverzeichnis
+\section*{Abkürzungsverzeichnis}
+
+\begin{description}
+	\item \textbf{ABC} Abkürzung 1% \ref{ABC}
+	\item \textbf{DEF} Abkürzung 2% \ref{DEF}
+\end{description}
+
+% Ende Abkürzungsverzeichnis
+
+\definecolor{dark-blue}{rgb}{0.15,0.15,0.4}
+
+\newpage
+
+\newpage
+
+\chapter{Einführung}
+Hier die Hinführung zum Thema einfügen und grob die Struktur der Arbeit erläutern. Was ist das Grundproblem, welches wie (grob!) untersucht wird und welche Ergebnisse möchte diese Arbeit auf welche Weise liefern? \cite[p. 123]{fama1965}
+
+\section{Ähnliche Arbeiten}
+Es gibt viele ähnliche Arbeiten, also den Stand der Forschung erläutern. So sollten Verweise aussehen: \cite[S. 123]{paley1819} oder \cite{dietterich2002}. Tipp: Unbedingt bei der Recherche auch aktuelle Forschung berücksichtigen (maximal 1-2 Jahre alt!). Es gilt laut Kahnemann \cite{kahneman2013}, dass blah. Formeln in Latex $ \sqrt{5} $ sehen übrigens so aus:
+
+\begin{equation}
+	\lim_{m \to \infty}{\Big(1 + \frac{i_N}{m}\Big)^m = e^{i_N}}
+\end{equation}
+
+\begin{align*}
+	a &= 123\\
+	b &= \sqrt{456}
+\end{align*}
+
+\section{Zentrale Fragestellung der Arbeit}
+Hier die zentrale Fragestellung der Arbeit erläutern. Ihr habt oben ähnliche Arbeiten beschrieben. Wie grenzt sich eure davon ab. Was macht ihr anders? Warum? Was möchtet Ihr zeigen, was noch niemand so untersucht hat?	
+
+In den Tabellen in Darstellungen \ref{tab:tabelle1} ist gezeigt, dass blah.
+
+\begin{table}[h]
+	\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
+		\hline
+			Jahr & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10\\
+		\hline
+			& 5\% & 5.5\% & 5.5\% & 6\% & 6\% & 6\% & 7\% & 7\% & 7,5\% & 10\%\\
+		\hline
+	\end{tabular}
+	\caption{Unsere Zahlen}
+	\label{tab:tabelle1}
+\end{table}
+	
+\section{Aufbau der Arbeit}
+Erläutert hier genauer die Struktur, auf die ihr schon ganz grob in der Einleitung eingegangen seid. Erklärt den roten Faden der Arbeit: Was ist grob in welchem Kapitel. Der Leser muss verstehen, was für eine Arbeit er vor sich hat und weshalb ihre Struktur genau so ist, wie ihr sie gewählt habt. Er soll im Idealfall jederzeit verstehen, warum er genau das liest, was er liest, bzw. worauf es hinaus läuft.
+
+\chapter{Methodischer Teil}
+In diesem Kapitel wird erläutert, welche Methoden ihr anwendet, um den untersuchten Sachverhalt in der Arbeit zu untermauern bzw. zu beweisen.
+
+\section{Beschreibung der Methode}
+Auf welche Art wollt ihr den untersuchten Sachverhalt beweisen? Wie sieht euer Testdesign aus? Bitte höchstens im Anhang schreiben, wie genau (auf technischer Ebene) die Ergebnisse erzielt wurden, das gehört sonst nicht in eine solche Arbeit.
+
+\section{Detaillierte Einführung in die Thematik}
+Hier könnt ihr ggfs. Vorwissen zusammenfassen, welches der Leser benötigt, um die Forschungsfrage zu verstehen, bzw. die Arbeit richtig einzuordnen.
+
+\section{Diskussion der Ergebnisse}
+Hier präsentiert ihr die Ergebnisse, die mit obiger Methodik erzielt wurden. Wie sind diese einzuordnen? Kann der untersuchte Sachverhalt eindeutig bewiesen werden? Falls nicht: Wieso nicht?
+
+\chapter{Schlussbetrachtung}
+
+\section{Fazit und Ausblick}
+Welche Forschung ist noch nötig oder bietet sich nun als nächstes an? Wie ist die Arbeit nun nach Abschluss zu bewerten?
+
+\section{Anhang}
+Hier kann man die Datensätze in größerem Detail beschreiben bzw. komplett einfügen, falls es nicht zu viel wird. Auch die verwendete Software kann hier genauer beschriebe werden, falls das als notwendig erachtet wird.
+
+% Ehemals schwarze Links jetzt in Blau
+\definecolor{black}{rgb}{0,0,0.5}
+\definecolor{dark-blue}{rgb}{0,0,0}
+
+\listoffigures
+\cleardoublepage
+\listoftables
+
+\definecolor{dark-blue}{rgb}{0.15,0.15,0.4}
+
+\bibliographystyle{alphadin}
+
+% Quellenverzeichnis ausgeben
+\bibliography{quellen}
+
+\end{document}

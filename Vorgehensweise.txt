@@ -1,0 +1,96 @@
+Translate this document using deepl if German is not your native language.
+
+Grundsätzliche Tipps:
+---------------------
+
+So weit es geht auf URLs als Quelle verzichten! Diese sind meist keine wissenschaftlichen Quellen und nicht zitierfähig, weil sie sich oft ändern. Besser: Fachliteratur und wiss. Veröffentlichungen.
+
+Unbewiesene Behauptungen sind nur Lückenfüller (für wiss. Arbeiten wertlos). Argumentiert anhand der Literatur. Wenn ihr für eine Behauptung keinen Beleg liefern könnt, dann lasst diese Weg! D.h. alle 2-3 Sätze mindestens eine Quelle (eher mehr als weniger). Fügt die Quellen nicht nachträglich ein, das ist keine echte Literaturarbeit, man merkt das später.
+
+Wenn ihr ähnliche Arbeiten zusammentragt (z.B. für Kaptitel "Ähnliche Arbeiten" / "Related Work"), dann erstellt unbedingt eine systematische Literaturanalyse (Googelt wie das geht). Kurz: Man definiert sauber, nach WELCHEN Kriteren (Suchbegriffen etc.) man WO (Literaturarchiven, Google Scholar, etc?) nach ähnlichen Arbeiten gesucht hat und nach welchen Kriteren man diese nun in die Analyse ähnlicher Arbeiten hat einfließen lassen. Erstellt kein "best of" mit zufällig ausgewählten Forschungsergebnissen, sondern das Ergebnis sollte hier eine chronologisch sinnvolle Auflistung von Literatur sein. Sinngemäß: A hat Effekt X gefunden, daraufhin haben B und C darauf aufbauend Effekt Y entdeckt, wonach Person D dies um Faktor 123 erweiterete, um schlussendlich Effekt Z zu beweisen.
+
+Im Zweifel das Thema lieber eng fassen und dafür umso mehr Zeit in den Nachweis investieren. Es ist besser, wenig (also eine eng gefasste Fragestellung) mit hoher Aussagekraft zu belegen, als viele Punkte nur mal vage anzuschneiden ohne schlüssigen Beweis.
+
+Wichtig bei Zitaten: Zitiert mit Seitenangabe \cite[S. 123]{quelle}
+
+Roter Faden erkennbar? -> Es muss jederzeit klar sein, warum ihr macht, was ihr macht und worauf ihr mit der Arbeit hinaus möchtet. Der Leser muss jederzeit wissen, warum er das liest, was er gerade liest. Achtung: Wenn ihr die Forschungsfrage nicht schon sauber definiert habt, dann macht es keinen Sinn, nachfolgende Kapitel zu schreiben. Es wird sich dann kein roter Faden finden, in dem sich genau auf die Lösung der aufgeworfenen Frage fokussiert wird.
+
+Schaut euch andere Arbeiten an -> IGNORIERT DIESE KEINESFALLS (Häufigster Fehler)
+
+Wenn ihr im Layout komische Lücken (Whitespaces) habt, oder sonst irgendwo etwas schräg aussieht nach Verwendung des Latex-Templates, dann schaut in Google nach dem entsprechenden Befehl, um diese Dinge abzustellen. Gebt das mangelhafte Layout keineswegs einfach so ab, das macht einen schlechten Eindruck und lässt es so aussehen, dass ihr euch für die Präsentation eurer Arbeit nicht wirklich interessiert.
+
+Völlig egal, welche Methode ihr anwenden wollt: Schaut, wie andere deren Anwendung verschriftlicht haben und welche Methoden in den wichtigen Arbeiten zum untersuchten Thema verwendet wurden. Wieso nutzt ihr ggfs. eine andere Methode? Bitte begründen. Beschreiben andere Autoren die Methode anders als ihr und legen evtl. auf andere Aspekte größeren Wert? Warum? Was machen die anders und weshalb? Ist deren Vorgehensweise zweckmäßiger/besser?
+
+Egal was ihr aufschreiben/darstellen wollt: ob nun ein Algorithmus, eine math. Formel, oder eine bestimmte Methode die es zu visualisieren gilt: Bei praktisch allem gibt es eine Art "Standardvorgehensweise", immer dann, wenn ihr euch selbst eine formale Notation ausdenken wollt, überprüft zuerst, wie andere das aufgeschrieben haben. Wenn ihr hier ohne Kenntnis des "Standards" improvisiert, wird das Ergebnis meist schlecht. Das gilt auch für grobe natürlichsprachliche Beschreibungen, obwohl im aktuellen Konktext gerade eine Formel angebracht wäre.
+
+Auch ein sehr häufiger Fehler: Beschreibt nicht in 90% der Arbeit die Methoden, die ihr anwenden werdet (das ist verlockend, sowas schreibt sich schnell, weil man es aus ein paar Quellen sinngemäß übernehmen kann). Was zählt ist die *Eigenleistung*, die Anwendung bzw. Entwicklung einer Methode und die korrekte Interpretation der Ergebnisse auf den betrachteten Daten (natürlich auch die Generierung der Daten). Wenn die Methodik schon woanders gut beschrieben wurde, dann verweist darauf und gebt das bestenfalls stark verkürzt wieder. Gute Arbeiten erkennt man unter anderem an viel Eigenleistung und wenig sinngemäß Übernommenen.
+
+Technische Details müssen in den Anhang, nur dann in den Hauptteil wenn es zum Verständnis der Arbeit zwingend erforderlich ist. z.B. beschreibt man nicht im Detail, welche Software man für Untersuchung X verwendet hat oder wie man an die Daten gelangt ist, sondern welche Methode angewendet wurde auf welchen Daten mit welchem Ergebnis. Die konkreten Werkzeuge, die verwendet wurden, sind bestenfalls Material für den Anhang aber nicht für den Hauptteil der Arbeit. Das verwirrt den Leser nur, da er keine Ahnung von Software X haben muss, um den Arbeitsablauf (was wurde mit den Daten gemacht und mit welchem Resultat?) und das Endergebnis zu verstehen (an dem er ja eigentlich interessiert ist).
+
+Es ist oft so, dass es für viele Konzepte eine passende formale Notation gibt. Oftmals wird bei studentischen Arbeiten nur eine grobe, natürlichsprachliche Beschreibung bevorzugt. Ersteres ist natürlich ein Qualitätskriterium für bessere wissenschaftliche Arbeiten.
+
+Ein wissenschaftlicher Text ist kein Zeitungsartikel: jegliche literarischen Stilmittel (Rhetorik, Ironie, etc.) haben zu unterbleiben. Man schreibt in einer wissenschaftlichen Arbeit nüchtern die Fakten auf, versucht aber nicht, Interesse beim Leser zu wecken oder die Meinung des Lesers durch solche Methoden (die nichts mit objektiven Fakten zu tun haben) in irgendeine Richtung zu beeinflussen.
+
+Vermeidet sprachliche Mängel jeder Art. Diese führen - völlig unnötig! - zu teils deutlichem Notenabzug! Auf https://languagetool.org/ findet sich eine Software, die sich Problemlos in Texstudio integrieren (einfach googeln, es finden sich viele Anleitungen) lässt und eine Rechtschreibprüfung auf Deutsch und Englisch anbietet. Weiterhin ist es ja problemlos möglich, noch einer anderen Person die Arbeit zur (sprachlichen) Korrektur zu geben. Es kommt oft vor, dass ich in jedem 2. Satz einen Kommafehler oder andere Mängel finde.
+
+Macht Grafiken groß genug - lieber zu groß als zu klein (halbe Seite mindestens wenn es ein Plot ist oder man viele Details erkennen soll). Wichtig hier: Verwendet NUR Vektorgrafiken (Googelt wie das geht bzw. was das ist, nur die sehen gut aus, wenn die Arbeit ausgedruckt wird oder man rein zoomt.)
+
+Habt ihr eine echte Forschungsfrage formuliert und geht diese eindeutig aus der Arbeit hervor? Eine Forschungsfrage lässt sich eindeutig mit "ja" oder "nein" beantworten - es ist eure Aufgabe, das in der Arbeit zu tun. Wie man wissenschaftliche Forschungsfragen stellt (und was keine wiss. Frage ist) solltet ihr recherchieren.
+
+***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** 
+Das Wichtigste:
+***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** 
+Setzt euch (spätestens vor der Abgabe, besser jedoch regelmäßig während der Bearbeitung) in der Gruppe zusammen und diskutiert, ob die hier genannten Kriterien durchweg eingehalten wurden. Am besten die Arbeit regelmäßig Satz für Satz durchgehen. Grobe Fehler, die zu spät gefunden werden, kosten viel mehr Zeit als solche, die man früh findet.
+***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** ***** 
+
+Chronologische Vorgehensweise:
+------------------------------
+
+1. "Experte" im Thema werden
+   -> Literature Reviews lesen - "A review on time series data mining"
+   -> Mindmap erstellen (z.B. Freeplane (Open Source Tool))
+      MindMap ist viel besser, als die Literaturinformationen zusammenhanglos in ein Word-Dokument zu schreiben,
+      man verliert zu schnell den Überblick.
+
+2. Forschungsfrage Formulieren - "in dieser Arbeit wird untersucht..."
+
+3. Ähnliche Arbeiten suchen
+   -> Kurz: Wie waren die bisherigen Forschungsaktivitäten / wichtige Ergebnisse?
+   -> Inwieweit unterscheiden sich deren Fragestellungen und Ergebnisse?
+   -> Was machen die anders?
+   -> Warum machen wir das anders als die? Begründung?
+   -> Gibt es einen Grund, warum die behandelte Fragestellung
+      bisher noch nicht untersucht wurde?
+
+4. Eigene Fragestellung präsentieren
+   -> Begründung: Warum wurde genau diese Fragestellung gewählt?
+
+5. Aufbau der Arbeit / Struktur der Arbeit erläutern
+   -> Was wird dem Leser noch präsentiert? Wie ist die logische Struktur der Arbeit?
+   -> "Im folgenden Kapitel wird das verwendete Modell präsentiert, danach wird es getestet mit Datensatz xyz ... "
+   -> es wird ein Überblick über die Arbeit gegeben
+
+6. Methodischer Teil: Beschreibung der Methodik
+   -> Welche Methode (z.B. Entscheidungsbäume, andere KI-Modelle) werden angewandt um die präsentierte Fragestellung zu lösen? Wichtig: Bei dieser Ausarbeitung nur auf Arbeiten verweisen, nicht ausführliche Erklärung / Beispiele geben.
+
+7. Genauere Beschreibung: Genaue Beschreibung der Eingabedaten / des Versuchsaufbaus / des Ablauf des Experiments / woher die Daten stammen etc. 
+
+8. Beschreibung der Ergebnisse: AUSWERTUNG der Berechnungsergebnisse. Welche Schlussfolgerungen lassen sich ziehen? Sind die Ergebnisse wie erwartet? Was lässt sich verbessern und wie?
+
+-> HÄTTE MAN AUF DAS GLEICHE ERGEBNIS MIT WENIGER AUFWAND/KOMPLEXITÄT KOMMEN KÖNNEN? WENN JA: WARUM WURDE DAS NICHT GEMACHT?
+
+9. Schlussbetrachtung: Fazit und Ausblick
+
+-> Ergebnisse zusammenfassen. Ausblick auf weitere Forschung geben.
+
+10. Abstract schreiben / Einführung schreiben
+
+-> Das Abstract soll dem Leser einen schnellen Überblick über die vorliegende Arbeit geben. Was wurde wie gemacht, mit welchen Daten und welchem Ergebnis? Man schreibt das Abstract zuletzt,
+da die Arbeit oft sich noch während der Entstehungsphase verändert. Auch soll das Abstract das Endergebnis beinhalten, das ja gleich zu Anfang noch nicht klar ist.
+
+-> Keywords einfügen
+
+-> Quellcode in den Anhang
+-> Datensatz (wenn sehr klein) in den Anhang
+
+-------------------------------------------------------

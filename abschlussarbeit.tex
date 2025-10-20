@@ -1,7 +1,7 @@
 % Art des dokuments (Hier: Abschlussarbeit)
 \documentclass{agasthesis}
 
-% F¸r Titelblatt
+% Fr Titelblatt
 \usepackage{geometry}
 \usepackage{xcolor}
 
@@ -14,7 +14,7 @@
 
 \usepackage{float}
 
-% Bilder einf¸gen mˆglich
+% Bilder einfgen mglich
 \usepackage{graphicx}
 
 % Seiten rotieren
@@ -36,15 +36,15 @@
 % EPS-Grafiken in pdf umwandeln
 \usepackage{epstopdf}
 
-% Kurze Anf¸hrungszeichen erlauben
+% Kurze Anfhrungszeichen erlauben
 %\shorthandoff{"}
 
-% th, z.B. f¸r 50th
+% th, z.B. fr 50th
 \usepackage[super]{nth}
 
 \begin{document}
 
-% Hier Titelseite einf¸gen
+% Hier Titelseite einfgen
 \input{titlepage}
 
 % Ab hier: 1.5-facher Zeilenabstand
@@ -57,48 +57,49 @@ Hierhin kommt die deutsche Kurzfassung. Tipp: Erst am Ende schreiben.
 Hierhin kommt die englische Kurzfassung. Tipp: Erst am Ende schreiben.
 
 \vspace{2em}
-\noindent \textbf{Stichwˆrter:} Wort 1, Wort 2, Wort 3
+\noindent \textbf{Stichwrter:} Wort 1, Wort 2, Wort 3
 
 \newpage
 
 %------------------------------------------------------------------------------------------------
 
-\subsection*{Erkl‰rung}
-Ich versichere, dass ich die vorliegende Arbeit selbst‰ndig verfasst
+\subsection*{Erklrung}
+Ich versichere, dass ich die vorliegende Arbeit selbstndig verfasst
 und keine anderen als die angegebenen Quellen und Hilfsmittel benutzt habe
 und dass die Arbeit
-in gleicher oder ‰hnlicher Form noch keiner anderen Pr¸fungsbehˆrde
-vorgelegen hat und von dieser als Teil einer Pr¸fungsleistung
-angenommen wurde. Alle Ausf¸hrungen, die wˆrtlich oder sinngem‰ﬂ
-¸bernommen wurden, sind als solche gekennzeichnet.
+in gleicher oder hnlicher Form noch keiner anderen Prfungsbehrde
+vorgelegen hat und von dieser als Teil einer Prfungsleistung
+angenommen wurde. Alle Ausfhrungen, die wrtlich oder sinngem
+bernommen wurden, sind als solche gekennzeichnet.
 \\[10mm]
 \noindent
 \begin{tabular}{@{}p{0.82\linewidth}@{\hspace*{2ex}}r@{\hspace*{2ex}}r}
 Mit der Einstellung dieser Arbeit in die Bibliothek bin ich einverstanden.
 & ja $\boxtimes$ & nein $\square$ \\[2em] %% change $\square$ to $\boxtimes$ to make a selection
-Der Verˆffentlichung dieser Arbeit im Internet stimme ich zu.
+Der Verffentlichung dieser Arbeit im Internet stimme ich zu.
 & ja $\square$ & nein $\boxtimes$ \\
 \end{tabular}
 \\[20mm]
 
 \noindent
-Koblenz, den \today \\[10mm]
+Koblenz, \today \\[10mm]
 
 \newpage
 
 \definecolor{dark-blue}{rgb}{0,0,0}
 
+\renewcommand{\contentsname}{Table of Contents}
 \tableofcontents
 
-% Abk¸rzungsverzeichnis
-\section*{Abk¸rzungsverzeichnis}
+% Abkrzungsverzeichnis
+\section*{Abkrzungsverzeichnis}
 
 \begin{description}
-	\item \textbf{ABC} Abk¸rzung 1% \ref{ABC}
-	\item \textbf{DEF} Abk¸rzung 2% \ref{DEF}
+	\item \textbf{ABC} Abkrzung 1% \ref{ABC}
+	\item \textbf{DEF} Abkrzung 2% \ref{DEF}
 \end{description}
 
-% Ende Abk¸rzungsverzeichnis
+% Ende Abkrzungsverzeichnis
 
 \definecolor{dark-blue}{rgb}{0.15,0.15,0.4}
 
@@ -106,60 +107,509 @@ Koblenz, den \today \\[10mm]
 
 \newpage
 
-\chapter{Einf¸hrung}
-Hier die Hinf¸hrung zum Thema einf¸gen und grob die Struktur der Arbeit erl‰utern. Was ist das Grundproblem, welches wie (grob!) untersucht wird und welche Ergebnisse mˆchte diese Arbeit auf welche Weise liefern? \cite[p. 123]{fama1965}
+\chapter{Introduction}
+\section{Background & Motivation}
+Analyzing financial markets and optimizing portfolios is a key challenge affecting not only organizations such as banks and companies, 
+but also private individuals \cite{salo_fifty_2024}. Nevertheless, 
+traditional models are reaching their limits due to the increasing availability of large amounts of high-frequency market data and unstructured information, 
+such as that found in company reports or company news \cite{zhang_novel_2023} & \cite{guo_textual_2016}.
 
-\section{ƒhnliche Arbeiten}
-Es gibt viele ‰hnliche Arbeiten, also den Stand der Forschung erl‰utern. So sollten Verweise aussehen: \cite[S. 123]{paley1819} oder \cite{dietterich2002}. Tipp: Unbedingt bei der Recherche auch aktuelle Forschung ber¸cksichtigen (maximal 1-2 Jahre alt!). Es gilt laut Kahnemann \cite{kahneman2013}, dass blah. Formeln in Latex $ \sqrt{5} $ sehen ¸brigens so aus:
+One of the most important works of modern portfolio theory (MPT) is Harry Markowitz's 1952 essay, 
+"Portfolio Selection," for which he received a Nobel Prize. The essay deals with achieving a favorable balance between risk and return. 
+Despite their enormous theoretical significance, numerous critics argue that the underlying assumptions of such models and their representation of financial markets 
+do not correspond to reality. Critics argue, for example, that in the model assumptions, investors act rationally in an attempt to maximize profits while keeping risk low. 
+In reality, investors are influenced and make irrational decisions, for example, when they invest hastily for fear of missing out. Further points of criticism are that investors 
+in these models have unlimited capital and information at their disposal \cite{mangram_simplified_2013}.
 
-\begin{equation}
-	\lim_{m \to \infty}{\Big(1 + \frac{i_N}{m}\Big)^m = e^{i_N}}
-\end{equation}
+Against this backdrop, methods based on artificial intelligence (AI) are getting more attention. AI techniques offer a more accurate representation of the financial market. 
+These tools can describe market structure, process large amounts of structured and unstructured information, and capture nonlinear relationships between different variables. 
+AI tools assist portfolio managers throughout the entire process, 
+including visualizing the market, identifying assets, compiling the portfolio, executing trades, and interpreting the results \cite{sutiene_enhancing_2024}.
+\chapter{Fundamentals}
+\section{Introduction to Artificial Intelligence & Machine learning}
+There is no single definition of artificial intelligence (AI). The European Parliament defines AI as "the ability of a machine to imitate human abilities, 
+such as logical thinking, learning, planning, and creativity" \cite[p. 98]{seidel_banking_2025}.
 
-\begin{align*}
-	a &= 123\\
-	b &= \sqrt{456}
-\end{align*}
+By improving forecasts, optimizing processes, and resource allocation, as well as by personalizing digital solutions for individuals and organizations. 
+The use of AI can give companies a decisive competitive advantage and support socially and environmentally beneficial outcomes, 
+for example, in the areas of healthcare, agriculture, etc. \cite{radley-gardner_fundamental_2016}.
 
-\section{Zentrale Fragestellung der Arbeit}
-Hier die zentrale Fragestellung der Arbeit erl‰utern. Ihr habt oben ‰hnliche Arbeiten beschrieben. Wie grenzt sich eure davon ab. Was macht ihr anders? Warum? Was mˆchtet Ihr zeigen, was noch niemand so untersucht hat?	
+Machine learning is a subfield of artificial intelligence \cite[p. 19]{russell_artificial_2022}. It involves computer programs that automatically discover recurring patterns in data. 
+These patterns are then used to categorize the data \cite[p. 1]{bishop_pattern_2006}.
 
-In den Tabellen in Darstellungen \ref{tab:tabelle1} ist gezeigt, dass blah.
+Traditionally, three types of learning have been distinguished: supervised, unsupervised, and reinforcement. 
+Supervised learning involves learning from sample data and linking new inputs with the correct outputs. 
+For example, it uses historical data with target variables to improve the prediction model for stock returns. 
+In contrast, unsupervised learning works with unlabeled data and attempts to find useful structures within it, such as through clustering or dimension reduction \cite{goodfellow_generative_2020}. 
+Reinforcement learning involves evaluating the outputs using rewards or punishments to improve the results \cite{stiennon_learning_2020}.
 
-\begin{table}[h]
-	\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|}
-		\hline
-			Jahr & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10\\
-		\hline
-			& 5\% & 5.5\% & 5.5\% & 6\% & 6\% & 6\% & 7\% & 7\% & 7,5\% & 10\%\\
-		\hline
-	\end{tabular}
-	\caption{Unsere Zahlen}
-	\label{tab:tabelle1}
-\end{table}
-	
-\section{Aufbau der Arbeit}
-Erl‰utert hier genauer die Struktur, auf die ihr schon ganz grob in der Einleitung eingegangen seid. Erkl‰rt den roten Faden der Arbeit: Was ist grob in welchem Kapitel. Der Leser muss verstehen, was f¸r eine Arbeit er vor sich hat und weshalb ihre Struktur genau so ist, wie ihr sie gew‰hlt habt. Er soll im Idealfall jederzeit verstehen, warum er genau das liest, was er liest, bzw. worauf es hinaus l‰uft.
+In recent years, deep learning, i.e., the use of deep neural networks such as long short-term memory (LSTM), 
+has made progress and proven to be powerful in predicting financial series, as it can recognize complex patterns in highly noisy market data \cite{fischer_deep_2018}.
 
-\chapter{Methodischer Teil}
-In diesem Kapitel wird erl‰utert, welche Methoden ihr anwendet, um den untersuchten Sachverhalt in der Arbeit zu untermauern bzw. zu beweisen.
+For portfolio optimization, machine learning methods open up the possibility of mapping nonlinear dependencies between assets, 
+improving forecasts of returns or risks, and modeling economic models. They therefore complement traditional financial mathematical models, 
+which are often rely on linear assumptions and prove insufficient for such complex markets \cite{gu_empirical_2020}.
 
-\section{Beschreibung der Methode}
-Auf welche Art wollt ihr den untersuchten Sachverhalt beweisen? Wie sieht euer Testdesign aus? Bitte hˆchstens im Anhang schreiben, wie genau (auf technischer Ebene) die Ergebnisse erzielt wurden, das gehˆrt sonst nicht in eine solche Arbeit.
+\section{Genetic Algorithms}
+\subsection{Introduction}
+Genetic algorithms are a proven method for optimizing complex problems. They are based on the basic principles of biological evolution, 
+namely genetic variations resulting from mutation, the effects of which on subsequent generations can be positive, neutral, or negative. 
+Through the recombination of individuals, a population gradually adapts to changing conditions. When implemented as an algorithm, 
+different solution variants are evaluated using fitness functions in order to select and further develop the best options. 
+This interactive process is continued until a defined termination criterion is reached. 
+The end result is a solution that has the highest fitness in terms of the specified criteria and is therefore considered the optimal approximation to the target problem \cite[p. 203]{soldatos_big_2022}.
+\subsection{Fundamental principles}
+A genetic algorithm can accommodate multiple input variables. In the financial sector, these variables could include asset prices, dividends, volatility, 
+correlation parameters, and diverse asset breakdowns such as currencies, regions, asset classes, and credit ratings \cite[p. 204]{soldatos_big_2022}. 
+Chromosomes represent potential solution candidates. In this context, a chromosome could be a portfolio allocation, 
+with each gene describing a share of a particular asset \cite[p. 204]{soldatos_big_2022} & \cite[p. 7]{melanie_introduction_1999}. 
 
-\section{Detaillierte Einf¸hrung in die Thematik}
-Hier kˆnnt ihr ggfs. Vorwissen zusammenfassen, welches der Leser benˆtigt, um die Forschungsfrage zu verstehen, bzw. die Arbeit richtig einzuordnen.
+Each candidate solution is evaluated using a fitness function, which indicates how well the solution meets the optimization goal. 
+One way to evaluate fitness is by combining expected return and variance \cite[p. 206]{soldatos_big_2022}.
 
-\section{Diskussion der Ergebnisse}
-Hier pr‰sentiert ihr die Ergebnisse, die mit obiger Methodik erzielt wurden. Wie sind diese einzuordnen? Kann der untersuchte Sachverhalt eindeutig bewiesen werden? Falls nicht: Wieso nicht?
+The population evolves through repeated applications of genetic operators:
 
-\chapter{Schlussbetrachtung}
+Selection: Solutions with higher fitness are more likely to be selected for the next generation. 
+This corresponds to the principle of "survival of the fittest."
 
-\section{Fazit und Ausblick}
-Welche Forschung ist noch nˆtig oder bietet sich nun als n‰chstes an? Wie ist die Arbeit nun nach Abschluss zu bewerten?
+Crossover: Two "parent solutions" are combined to produce new offspring. 
+Parts of the chromosomes are exchanged to create new combinations of characteristics from both parent solutions.
 
-\section{Anhang}
-Hier kann man die Datens‰tze in grˆﬂerem Detail beschreiben bzw. komplett einf¸gen, falls es nicht zu viel wird. Auch die verwendete Software kann hier genauer beschriebe werden, falls das als notwendig erachtet wird.
+Mutation: Individual genes are randomly altered to generate new solutions and prevent the population from becoming trapped in local optima.
+
+\cite[p. 8]{melanie_introduction_1999}
+
+By repeatedly executing the genetic algorithm, a population is created over several generations that iteratively develops toward better solutions. 
+The strength of this method lies in its ability to solve complex problems and demonstrate robustness \cite[p. 27]{melanie_introduction_1999} & \cite[p. 213]{soldatos_big_2022}.
+
+\subsection{Variants and extensions}
+There are numerous extensions to the basic genetic algorithm that increase its efficiency and stability. 
+One such extension is elitism, which involves preserving the best solutions of a generation to prevent the loss of knowledge \cite{deb_fast_2002}.
+
+There are numerous extensions to the basic idea of the actual genetic algorithm that increase its efficiency and stability. 
+One of these is known as elitism, whereby the best solutions of a generation are retained so that their knowledge is not lost. 
+Another option is steady-state selection, where only a few individual elements are replaced, for example, only the weakest individuals \cite[p. 126-128]{melanie_introduction_1999}. 
+
+Two other selection methods are Boltzmann selection and rank selection. With Boltzmann selection, the idea is to give weaker 
+individuals a chance to be included in the next generation in order to increase diversity. Over time, selection becomes stricter, 
+and the better individuals are favored. The advantage is that there is a balance between exploration and exploitation, i.e., 
+a broad search at the beginning and a focus on the good solutions at the end \cite[p. 126-128]{melanie_introduction_1999}.
+
+Rank selection solves the problem that, in normal fitness-proportional selection, individuals with extremely good fitness can dominate the population. 
+The solution is to sort individuals by rank instead of directly using fitness as a selection criterion. 
+The selection probability is then based on a linear distribution, for example. This prevents the strong dominance of individual individuals. 
+These are just a few examples, there are numerous other variations \cite[p. 126-128]{melanie_introduction_1999}.
+
+\subsection{Advantages and limitations}
+The advantages of genetic algorithms are that they can solve complex and high-dimensional problems flexibly. 
+They are well suited to nonlinear problems and can therefore be applied to a wide range of problem types, for example. 
+Classic optimization methods can reach their limits in such cases \cite{melanie_introduction_1999}. 
+
+Another advantage with regard to portfolio optimization is that the fitness factor can be adjusted relatively easily, 
+thereby changing the target \cite[p. 206-207]{soldatos_big_2022}. 
+
+The ability of GAs to combine both exploration of the search space and refinement of solutions is another advantage. 
+Through selection, crossover, and mutation, new solutions are generated that combine the characteristics of successful individuals, 
+resulting in continuous improvement of the population. Crossover operations make it possible to control genetic diversity and explore different 
+areas of the search space, while mutation reduces the risk of getting stuck in local optima \cite[p. 8097‚Äì8101]{katoch_review_2021}.
+
+Despite these advantages, GAs also have clear limitations. They do not guarantee a global optimum, but at best an approximately optimal solution. 
+The quality of the results depends on parameters such as population size, mutation rate, and number of generations. For very large or complex problems, 
+the computational effort can be high, as many chromosomes must be evaluated over numerous generations in order to adequately cover the search space \cite[p. 88]{melanie_introduction_1999} & \cite{osman_introduction_1995}.
+
+Despite the many advantages of genetic algorithms, there are some key limitations that must be taken into account when applying them. 
+One important aspect is the selection of the initial population. The size and composition of the initial population has a significant 
+impact on the quality of the solutions found. If the population is too small, only suboptimal solutions may be found, while a very large 
+population greatly increases the computational effort \cite[p. 8114‚Äì8116]{katoch_review_2021}.
+
+Another common problem is premature convergence. This occurs when the algorithm comes to a standstill too early at a local optimum, 
+resulting in the loss of genetic diversity and the suppression of certain genes. This can lead to the global optimum being missed. 
+To counteract this, the diversity of the population must be maintained, for example, through targeted control of selection pressure 
+or combination with local search functions such as tabu search \cite[p. 8114‚Äì8116]{katoch_review_2021}.
+
+In addition, selecting efficient fitness functions is a challenge. The fitness function controls the selection of the best individuals, 
+and an unsuitable or computationally intensive function can make the algorithm inefficient or distort the results. This can increase the computation time, 
+especially with a high number of iterations \cite[p. 8114‚Äì8116]{katoch_review_2021}.
+
+Finally, the operators mutation and crossover also play a decisive role in the performance of genetic algorithms. 
+Without mutation, no new genetic information flows into the population, while the absence of crossover limits the exploration 
+of the search space and can lead to local optima. The right balance between these operations is crucial, but due to the stochastic nature of GAs, 
+it is not possible to determine an exact, universal optimal measure \cite[p. 8114‚Äì8116]{katoch_review_2021}.
+
+\subsection{Conclusion}
+Overall, despite their limitations, genetic algorithms are a robust and versatile tool. Their ability to handle complex problems without strong assumptions about the solution structure, 
+combined with flexibility and adaptability, makes them useful in many areas of application. At the same time, however, their use requires careful parameterization and critical evaluation 
+of the results to ensure reliable and efficient solutions.
+
+Author: Emily Zerbe
+
+\chapter{Methodology & Algorithms}
+\subsection{Introduction}
+Genetic algorithms (GAs) are among the most important methods of evolutionary computation and are increasingly being used in finance. 
+They offer particular advantages in portfolio optimization, as they can solve nonlinear, high-dimensional problems with restrictions 
+that cannot be adequately addressed using traditional methods such as Markowitz optimization \cite{li_application_2022} & \cite{kalayci_review_2017}. 
+While Markowitz assumes a strict model with normal distribution assumptions and quadratic optimization, GAs can be used to map flexible, 
+complex objective functions and more realistic market conditions \cite{chang_heuristics_2000}, \cite{mangram_simplified_2013} & \cite[p. 206-207]{soldatos_big_2022}. 
+
+A genetic algorithm simulates the biological evolutionary process. Populations of ‚Äúsolutions‚Äù (portfolios) are gradually improved through selection, 
+crossover, and mutation. Fitness evaluation based on economic targets such as sharp ratio or risk means that advantageous portfolios are given 
+preference in further development until the most optimized portfolio can be found \cite[p. 203-213]{soldatos_big_2022}.
+
+\subsection{Chromosome representation in portfolio optimization}
+Chromosome representation is a key factor in the application of genetic algorithms (GA) to portfolio optimization problems, as it determines how investment 
+decisions are modeled. In the following, we would like to introduce different methods. Binary encoding is the most historically 
+known and well-researched method. Solutions are represented as bit strings, i.e., as a sequence of zeros and ones. 
+The use of binary encoding can be justified by the fact that much of the existing theory on genetic algorithms is based on fixed bit strings of equal length. 
+Practical guidelines, such as for the selection of suitable parameters such as crossover or mutation rates, have also mostly been developed 
+in connection with binary coding. Despite these advantages, binary encoding is impractical and unnatural for many problems. 
+This is where many-characters and reale-valued encoding come in. Here, a chromosome consists either of an alphabet with many characters or of real numbers. 
+In many cases, many-characters and reale-valued encoding produce better results than binary encoding. However, performance depends heavily on the specific 
+problem and the details of the genetic algorithm used \cite[p. 117-118]{melanie_introduction_1999}.
+
+Example:
+
+Let's consider three stocks: A, B, and C.
+
+A solution using binary encoding could look like this: [0, 1, 1]. This means that stock A is not included in the portfolio, 
+while stocks B and C have been selected.
+
+However, this representation does not provide information about the weight of each stock. This is where real-value encoding 
+comes into place: [0, 0.4, 0.6]. In this proposed solution, it corresponds to the portfolio shares: Stock A = 0%, Stock B = 40%, and Stock C = 60%.
+
+Combining both encodings (hybrid encoding) would allow us to represent the selection of stocks and their weighting in a chromosome. 
+This makes the solution decision-capable and directly interpretable for portfolio optimization.
+
+\subsection{Crossover Mechanisms}
+Crossover is one of the central genetic operators that plays a decisive role in creating new portfolios. It combines information from two "parent solutions" 
+to generate one or more "child solutions," ideally with better risk-return characteristics \cite[p. 8-9]{melanie_introduction_1999}.
+
+The classic method is single-point crossover. In this process, the chromosome is cut into two parts at a random point, and the sections are exchanged between 
+the parents. This creates new child solutions that contain elements of both parents \cite[p. 8-9]{melanie_introduction_1999}. However, there is one disadvantage to portfolio 
+optimization: the weights of the assets do not automatically add up to one after the exchange. This is why additional normalization steps are necessary \cite[p. 1750]{fu_adopting_2013}.
+
+An extension of this is the two-point or multi-point crossover. Here, several intersection points are selected, which leads to greater mixing of the chromosomes 
+and thus to greater diversity \cite[p. 57]{melanie_introduction_1999}. 
+
+Another option that is also used in the financial world is the arithmetic crossover. Instead of replacing the parents at a certain point, 
+the child is formed as a weighted combination of the two parents \cite[p. 10]{filograsso_adaptive_2023}.
+
+Example:
+
+Parents A = [0.2, 0.3, 0.5]
+
+Parent B = [0.4, 0.2, 0.4]
+
+Child = 0.6 * A + 0.4 * B = [0.28, 0.26, 0.46]
+
+Studies show that arithmetic crossover performs better and achieves better results in portfolio applications 
+than single-point crossover and two-point crossover \cite[p. 71]{dubinskas_investment_2017} & \cite[p. 152]{sefiane_portfolio_2012}.
+
+\subsection{Mutation}
+In addition to crossover, mutation is another essential genetic operator. While crossover combines existing information, 
+mutation is responsible for introducing new genetic diversity. It prevents the algorithm from getting stuck in a local optimum 
+and increases the chances of finding the global optimum \cite[p. 129-130]{melanie_introduction_1999} & \cite[p. 471]{kalayci_review_2017}.
+
+A simple form is uniform mutation, in which a randomly selected gene is changed within permissible limits. For example, 
+the weight of share B in a chromosome could be increased from 0.3 to 0.32, while the other weights would have to be adjusted 
+accordingly \cite[p. 18]{brzek_exploration-driven_2025}.
+
+The boundary mutation, on the other hand, places a weight directly on extreme values, such as the lower or upper limit of a 
+permissible allocation (e.g., 0% or 10% minimum weighting). This can be useful if certain limits are to be adhered to when 
+compiling the portfolio \cite[p. 181]{rajakumar_static_2013}.
+
+In addition, there are adaptive mutation methods in which the mutation rate is dynamically adjusted. There are various possibilities here, 
+for example, the mutation rate can be adjusted from generation to generation. Another option is to use a higher mutation rate at the beginning 
+of the search, when the solution is still far from optimal, in order to create a broader spectrum of solutions. As the generations increase, 
+the mutation rate is reduced in order to achieve more finer results \cite[p. 181]{rajakumar_static_2013}.
+
+Mutation is therefore an important tool for ensuring that the search space is explored and genetic diversity is preserved. 
+Choosing the right type of mutation can have a significant impact on the speed and quality of optimization \cite{rajakumar_static_2013}, \cite[p. 8 & 129-130]{melanie_introduction_1999} & \cite[p. 471]{kalayci_review_2017}.
+
+
+\subsection{Fitness function and fitness factors}
+In the context of portfolio theory and the application of genetic algorithms (GA), the choice of a suitable fitness function is of central importance, 
+as it ultimately determines which solution is preferred for further development in the search process. A simple option is a return-based fitness function, 
+where the goal is solely to maximize the expected portfolio return. In practice, however, more complex approaches that consider various goals and framework 
+conditions are employed. The fitness functions are always applied to the entire portfolio that is to be optimized. The fitness factors used can be roughly divided 
+into three groups: risk and return-related criteria, e.g., volatility limitation, minimization of fluctuations compared to a model portfolio, maximization of returns, 
+or improvement of the Sharpe ratio. Portfolio restriction-related factors, e.g., diversification, reuse of existing investments to reduce reallocations, or consideration 
+of preferred assets. As well as asset-specific criteria, e.g., adherence to a target allocation by asset class, sustainability requirements, regional preferences, or sentiment data. 
+Each fitness factor is scaled to a value between 0.0 and 1.0 and assigned a weight that determines its relative importance in the optimization. Factors with a high weight have a greater 
+influence on the result than those with a low weight. In this way, combining and weighting different factors can generate a single fitness value that enables the algorithm to objectively 
+compare different portfolios \cite[p. 206-207]{soldatos_big_2022}.
+
+Author: Emily Zerbe
+\chapter{4.	Portfolio Optimization Implementation}
+\subsection{Markowitz Solver}
+Markowitz optimization is based on the assumption of rational investors who compile a portfolio according to the risk-return principle \cite{mangram_simplified_2013}. 
+The aim is to find portfolios that deliver the maximum expected return for a given level of risk, or conversely, to minimize risk for a given level of 
+return \cite[p. 77-91]{markowitz_portfolio_1952}.
+\subsubsection{Calculation of expected return and covariance matrix}
+First, the historical daily returns of the selected assets (AAPL, MSFT, GOOGL, AMZN, TSLA) are loaded and annualized to calculate the expected returns:
+
+expected_returns[ticker] = returns.mean() * 252
+
+The covariance matrix is created in the same way to capture the risk structure between the assets:
+
+cov_matrix = returns_df.cov() * 252
+
+This matrix provides the basis for all further calculations of portfolio risk.
+
+\subsubsection{Portfolio key figures}
+Key figures are calculated for any portfolio with weights w:
+
+Expected portfolio return:
+
+portfolio_return = np.dot(weights_array, list(self.expected_returns.values()))
+
+This results in the following formula:
+\[
+R_p = w^{T} \mu
+\]
+
+Risk (volatility):
+
+portfolio_risk = np.sqrt(np.dot(weights_array.T, np.dot(self.cov_matrix.values, weights_array)))
+
+This results in the following formula:
+\[
+\sigma_P=\sqrt(w^T\ \sum\of w)
+\]
+
+Sharpe Ratio:
+
+sharpe_ratio = (portfolio_return - self.risk_free_rate) / portfolio_risk if portfolio_risk > 1e-10 else 0
+
+This results in the following formula:
+\[
+S=(R_p-r_f)/\sigma_p
+\]
+
+These functions allow the evaluation of each portfolio \cite[p. 225-310]{elton_modern_2009}.
+\subsubsection{Minimum variance portfolio (MVP)}
+The minimum variance portfolio is determined by solving a linear equation system via matrix inversion of the covariance matrix:
+\[
+W_MVP=(\sum^(-1)\ 1)/(1^T\ \sum^(-1)\ 1)
+\]
+
+This formula can be seen in the following code:
+
+This is the inverse of the covariance matrix:
+
+inv_cov = np.linalg.inv(self.cov_matrix.values)
+
+This is vector 1:
+
+ones = np.ones(self.num_assets)
+
+This corresponds to the vector:
+
+denominator = np.dot(ones.T, np.dot(inv_cov, ones))
+
+This is where the actual calculation takes place:
+
+mvp_weights = np.dot(inv_cov, ones) / denominator
+
+Here, \Sigma is the covariance matrix and 1 is a vector of ones. This weighting minimizes portfolio variance without taking returns into account \cite[p. 1851-1872]{merton_analytic_1972}.
+
+\subsubsection{Tangency portfolio}
+The tangency portfolio maximizes the Sharpe ratio and is calculated by optimizing the excess return (\mu - r_f) \cite[p. 225-310]{elton_modern_2009}:
+\[
+w_Tangeny=(\sum^(-1)\ (\mu-r_\atop\ 1))/(\begin1^T\sum„Äó^(-1) (Œº-r_¬¶ 1))
+\]
+
+This formula can be seen in the following code:
+
+This is the inverse of the covariance matrix:
+
+inv_cov = np.linalg.inv(self.cov_matrix.values)
+
+Here, the excess return is calculated:
+
+excess_returns = np.array(list(self.expected_returns.values())) - self.risk_free_rate
+
+A vector containing only ones: 
+
+ones = np.ones(self.num_assets)
+
+This is the numerator:
+
+numerator = np.dot(inv_cov, excess_returns)
+
+This is the denominator:
+
+denominator = np.dot(ones.T, numerator)
+
+The tangency is calculated here:
+
+tangency_weights = numerator / denominator
+
+This portfolio represents the efficient portfolio on the efficient frontier that offers the highest excess return per risk.
+
+\subsubsection{Efficient frontier and random portfolios}
+The efficient frontier is constructed by calculating the risk-minimizing portfolio for a set of target returns R*. 
+This yields a curve of efficient portfolios. The input is the range of target returns between MVP and tangency returns. 
+The solution is the quadratic optimization problem using Lagrange multipliers. 
+The output is the arrays of (sp, Rp) and the corresponding weighting \cite[p. 1851-1872]{merton_analytic_1972}.
+\subsubsection{Random portfolios}
+Thousands of random portfolios are generated for visualization purposes. These serve as a comparison and highlight which 
+portfolios are inefficient because they may lie above the frontier \cite[p. 225-310]{elton_modern_2009}.
+\subsubsection{Visualization}
+The system creates various plots. The efficient frontier (blue) shows the optimal risk-return combination. The random portfolios are displayed 
+in gray; these are the comparison set of random weightings. The MVP and tangency portfolios are marked in red and green, respectively. 
+The weighting diagrams are bar charts that serve to illustrate the composition of the individual portfolios. The individual assets are 
+the positioning of the individual stocks according to risk and expected return. All graphics are saved.
+\subsubsection{Results and storage}
+The final results MVP and tangency portfolios with their key figures and weightings‚Äîare stored in a JSON file. This enables structured reuse, 
+especially for comparison with alternative optimization methods such as genetic algorithms.
+
+Author: Emily Zerbe
+
+\subsection{Genetic Algorithm (GA)}
+The genetic algorithm is an alternative optimization method. Its aim is to find a portfolio structure that maximizes the risk-return ratio, measured using the Sharpe ratio. 
+Based on historical return data, an evolutionary optimization process is used to gradually find better portfolio compositions. In contrast to classic Markowitz optimization, 
+this approach is not based on analytical equations, but on a heuristic search that replicates biological evolutionary principles such as selection, crossover, and mutation \cite[p. 203]{soldatos_big_2022}.
+\subsubsection{Parameters}
+First, the global parameters that control the behavior of the algorithm are defined. These include the population size, the number of generations, the initial and final mutation rates, and the crossover rate. 
+The HA_MAX_WEIGHT_PER_ASSET parameter is particularly important, as it specifies that no single asset may account for more than 25% of the total portfolio. This prevents the model from developing an excessive 
+concentration on a few stocks. The risk-free interest rate (RISK_FREE_RATE = 0.02) serves as a reference value for calculating the Sharpe ratio.
+\subsubsection{Initialization}
+During initialization, the historical return data is read in, from which two key figures are calculated: the expected returns and the covariance matrix of the assets. 
+The expected return of each asset is calculated as the mean of the daily returns, extrapolated to 252 trading days. The covariance matrix is calculated analogously from 
+the daily returns and also scaled on an annual basis. These two variables form the mathematical basis for all further calculations in the optimization process.
+
+Various auxiliary functions are then defined to evaluate the performance of a portfolio. As in the Markowitz Solver, the calculate_portfolio_metrics method calculates the 
+expected portfolio return, the risk, and the resulting Sharpe ratio for a given weighting.
+\subsubsection{Fitness function}
+The core of the optimization is the fitness_function method. It calculates the fitness value for each individual, i.e., for each possible portfolio. 
+This corresponds primarily to the Sharpe ratio, but is supplemented by a penalty component if the weighting restriction is violated. If an asset exceeds 
+the maximum permissible share of 25%, the fitness is reduced by a quadratic penalty. The penalty is calculated as 5 * (wi ‚Äì wmax)2 and summed for all overweighted 
+assets. This method ensures that the algorithm favors solutions that remain within the specified limits without completely restricting the freedom of search. The advantage of this 
+soft penalty is that the algorithm can continue to work exploratively instead of being forced into local minima by hard limits.
+\subsubsection{Initialization of the population}
+The first phase of the genetic algorithm is the initialization of the population. This involves generating a certain number of random portfolios whose weights are chosen at random but then normalized so that they add up to one:
+
+weights = np.random.random(self.num_assets)
+weights /= np.sum(weights)
+
+This ensures that each portfolio is fully invested and does not contain any short positions. In the subsequent evolution phase, the population is further developed over a specified number of generations. Each generation consists of several steps that follow the biological principles of natural selection.
+
+\subsubsection{Selection}
+In the selection step, the best individuals are selected based on their fitness to serve as parents for the next generation. The code uses a so-called tournament selection for this purpose. 
+Several individuals (in this case, three) are randomly selected from the current population, and the individual with the highest fitness wins the tournament. This method offers a good balance 
+between randomness and performance, as it favors fitter individuals while still maintaining a certain degree of genetic diversity \cite[p. 193]{miller_genetic_1995}. 
+\subsubsection{Crossover}
+The next step is crossover, i.e., the combination of the genetic information of two parent portfolios. With a probability of 80%, 
+two parents are selected at random and ‚Äúcut‚Äù at a random position. The first part comes from the first parent, the second from the second. 
+The resulting offspring is then normalized so that the weights again add up to one. This step creates a new generation of portfolios that combine 
+the characteristics of both parents and potentially offer better risk-return combinations \cite[p. 8-9]{melanie_introduction_1999}.
+\subsubsection{Mutation}
+Mutation also plays a central role, introducing random small changes in the portfolio weights. It prevents the algorithm from getting stuck in a local 
+optimum too early and ensures that new areas of the solution space continue to be explored \cite[p. 129-130]{melanie_introduction_1999} & \cite[p. 471]{kalayci_review_2017}. 
+The mutation is applied with a probability that gradually decreases over the course of generations, a concept known as the adaptive mutation rate \cite[p. 181]{rajakumar_static_2013}. 
+The mutation rate starts at 0.2 and decreases linearly to 0.05 as the algorithm progresses. This means that early in the search, there is a lot of exploration, followed later 
+by a targeted refinement of the best solutions \cite[p. 181]{rajakumar_static_2013}. Mathematically, the mutation rate for generation t is calculated as:
+\[
+m_t=\ m_0-(m_0-\ m_f\ )\bullet t/T
+\]
+
+Where m_0 represent the initial and m_f final mutation rates, respectively, and T is the total number of generations.
+\subsubsection{Main loop}
+In the main loop of the genetic algorithm (run_genetic_algorithm), this cycle of selection, crossover, and mutation is repeated. The best individual of each generation is transferred 
+directly to the next generation, a process known as elitism, to ensure that good solutions are not lost \cite{deb_fast_2002}. After all generations have been completed, 
+the final population is evaluated, and the individual with the highest fitness is considered the optimal portfolio. The return, risk, and Sharpe ratio are then calculated and stored for this portfolio.
+\subsubsection{Progress and results}
+The algorithm logs its progress using the Python logger and stores key intermediate results in lists such as fitness_history and best_individual_history. 
+This information is then used to graphically represent the progress of the optimization. The plot ga_optimization_progress.png shows the progression of the 
+best fitness values across all generations. This makes it possible to see whether the algorithm is converging or whether the solutions are still fluctuating greatly.
+
+In addition, the plot_portfolio_weights method visualizes the weighting structure of the final portfolio as a bar chart. This makes it easy to see which assets are over- 
+or underweighted in the optimal portfolio. Finally, an additional function, compare_with_markowitz, allows a direct comparison with the results of classic Markowitz optimization. 
+To do this, the results of the minimum variance and tangential portfolios stored in a separate JSON file are loaded and compared with the GA results in bar charts. These comparison 
+graphs show the extent to which the heuristic algorithm achieves similar or even better portfolio metrics than the analytical solution.
+\subsubsection{Summary}
+In summary, this code combines the fundamentals of modern portfolio theory with a heuristic optimization method. While the Markowitz approach 
+is based on solving a closed system of equations, the genetic algorithm uses an evolution-based search that can also be applied to nonlinear or 
+constrained problems. The adaptive mutation rate and weight restriction attempt to strike a balance between diversification, return optimization, 
+and realism. The implementation is modular, so parameters such as population size, mutation rate, or crossover probability can be easily adjusted to test different scenarios.
+\subsubsection{Overview}
+The presented implementation of portfolio optimization combines classic methods of Markowitz theory with a heuristic procedure based on a genetic algorithm (GA). 
+The goal of both approaches is to determine efficient portfolios that maximize the ratio of return to risk as measured by the Sharpe ratio.
+
+Markowitz optimization is based on the assumption of rational investors and uses historical return data to calculate expected returns and the covariance matrix. 
+This allows key figures such as expected portfolio return, risk (volatility), and Sharpe ratio to be determined. On this basis, the minimum variance portfolio (MVP), 
+which minimizes risk for a given return, and the tangential portfolio, which maximizes the Sharpe ratio, are calculated analytically. The efficient frontier is formed by 
+a large number of possible portfolios, each of which offers an optimal combination of risk and return. Randomly generated portfolios are used for visualization and comparison.
+
+The genetic algorithm represents an alternative, evolution-based optimization method. It simulates the principles of natural selection, crossover, and mutation to gradually improve 
+the portfolio composition over many generations. Random portfolios are generated, evaluated, and further developed based on their fitness. An adaptive mutation rate ensures a balance 
+between exploration and fine-tuning. In addition, a weighting restriction is introduced so that no single asset can account for more than 25% of the total portfolio. The algorithm logs 
+its progress, stores interim results, and displays the development of fitness values. In the end, the portfolio with the highest fitness is identified as optimal. A comparison function 
+also allows the GA results to be compared with the results of Markowitz optimization.
+
+Author: Emily Zerbe
+
+\chapter{Experiments & Results}
+\subsection{Comparative Analysis}
+This section presents and evaluates the results of the comparison between the classic Markowitz approach and the genetic algorithm (GA). 
+In addition, it examines how the use of AI-based forecasts affects portfolio optimization. 
+\subsection{Markowitz vs. Genetic Algorithm: Methodological Differences}
+The Markowitz approach is considered the basis of modern portfolio theory. It pursues the goal of achieving the highest possible expected return for a given risk \cite{mangram_simplified_2013}. 
+To this end, an optimization problem is solved using quadratic programming. This allows efficient portfolios to be determined using the minimum variance portfolio (MVP) or the tangential 
+portfolio with the best Sharpe ratio \cite{mangram_simplified_2013}.
+
+The genetic algorithm, on the other hand, does not work analytically, but is based on biological principles such as selection and mutation \cite[p. 8-9]{melanie_introduction_1999}. 
+In the analysis, 100 possible portfolios were ‚Äúevolutionarily‚Äù improved over 50 generations.
+
+\subsection{Results Comparison}
+The quantitative results show that both approaches lead to different but overall competitive results. The Markowitz minimum variance portfolio achieves an expected return 
+of 17.04% with a risk of 24.72% and a Sharpe ratio of 0.608 (markowitz_results.json). The tangential portfolio achieves the best risk-adjusted performance with a return of 21.00%, 
+a risk of 27.78%, and a Sharpe ratio of 0.684 (markowitz_results.json). The genetic algorithm fell between the two Markowitz portfolios with a return of 18.89%, a risk of 26.39%, 
+and a Sharpe ratio of 0.640.
+
+These results show that GA can achieve similar efficiency to the Markowitz approach (ga_vs_markowitz_comparison.png).
+
+\subsection{Differences in portfolio composition}
+There are also clear differences in the weighting of the individual stocks. The minimum variance portfolio distributes the shares rather conservatively: 
+Microsoft (54.1%) and Apple (41.1%) make up the largest share, while Google accounts for only 15.1%. Amazon (-3.7%) and Tesla (-6.6%) are held as short 
+positions to reduce risk (minimum_variance_portfolio_weights.png).
+
+The tangential portfolio, on the other hand, is significantly more risk-tolerant. It focuses heavily on Google (51.6%), Microsoft (45.2%), and Apple (35.1%). 
+The strong short position in Amazon (-39.1%) and the small long position in Tesla (7.2%) indicate a more speculative orientation (tangency_portfolio_weights.png).
+
+The genetic algorithm does not use negative weighting and thus generates a balanced portfolio with 39.8% Google, 30.1% Apple, 25.5% Microsoft, and 4.5% Tesla, while Amazon is completely excluded. This solution is less risky and does not contain any short positions.
+\subsection{Convergence and efficiency of the genetic algorithm}
+The behavior of the genetic algorithm during optimization shows a typical development. The initial fitness was 0.627 and rose rapidly to 0.640 in the first ten generations, 
+after which the value stabilized. This indicates an efficient search for solutions. However, there is a risk that the algorithm will ‚Äúget stuck‚Äù too early in a so-called local optimum, 
+i.e., it will no longer find the best possible solution (ga_optimization_progress.png).
+
+\subsection{With vs. without AI forecasts}
+The second part of the analysis examined the influence of AI models on portfolio optimization. Two forecasting models were used for this purpose: 
+the Chronos model for time series analysis and the TTM (time-to-maturity) model. Both models were combined using an ensemble method to obtain more robust predictions.
+
+The comparison between historical and forecast volatility shows clear differences. For Apple, the expected volatility rises from 29% to 33%, while for Microsoft it falls from 27% to 20%. 
+Google is expected to see slightly higher volatility at 36% instead of 32%, Amazon lower volatility at 31% instead of 37%, and Tesla a reduction in expected volatility from 62% to 53%.
+
+These results show that AI forecasts change the assessment of risk. This results in new weighting strategies that better reflect future market conditions (forecast_returns_analysis.png).
+
+\subsection{Change in correlations}
+The correlations between individual stocks are also shifting as a result of AI forecasts. Historically, correlations between technology stocks ranged from 0.43 to 0.68, 
+indicating strong joint performance. Tesla was somewhat more independent (0.27-0.60). The integration of forecast data slightly changes these structures, which in turn opens up 
+new diversification opportunities (correlation_matrix.png).
+\subsection{Impact on performance}
+Overall, the use of AI forecasts improves portfolio optimization on several levels. First, more accurate volatility predictions lead to better risk assessments. 
+Second, the models enable dynamic allocation that is not only based on historical data but also takes expected developments into account. Third, combining different 
+models increases the stability of the results because outliers or distortions in individual forecasts are balanced out.
+
+In practical terms, the combination of genetic algorithms and AI forecasts offers a good balance between performance and feasibility. While the Markowitz tangential portfolio 
+delivers the highest Sharpe ratio, its implementation involves short selling and higher transaction costs. The genetic algorithm delivers similarly good results but does not require short positions.
+
+Author: Emily Zerbe
+
+\chapter{Explainable Equity Research Reports}
+\chapter{Discussion}
+\chapter{Conclusion & Outlook}
+\chapter{Appendix & References}
 
 % Ehemals schwarze Links jetzt in Blau
 \definecolor{black}{rgb}{0,0,0.5}

@@ -254,7 +254,8 @@ of the results to ensure reliable and efficient solutions.
 Author: Emily Zerbe
 
 \chapter{Methodology & Algorithms}
-\subsection{Introduction}
+\subsection{Genetic Algorithms (GA) for Portfolio Optimization}
+\subsubsection{Introduction}
 Genetic algorithms (GAs) are among the most important methods of evolutionary computation and are increasingly being used in finance. 
 They offer particular advantages in portfolio optimization, as they can solve nonlinear, high-dimensional problems with restrictions 
 that cannot be adequately addressed using traditional methods such as Markowitz optimization \cite{li_application_2022} & \cite{kalayci_review_2017}. 
@@ -265,7 +266,7 @@ A genetic algorithm simulates the biological evolutionary process. Populations o
 crossover, and mutation. Fitness evaluation based on economic targets such as sharp ratio or risk means that advantageous portfolios are given 
 preference in further development until the most optimized portfolio can be found \cite[p. 203-213]{soldatos_big_2022}.
 
-\subsection{Chromosome representation in portfolio optimization}
+\subsubsection{Chromosome representation in portfolio optimization}
 Chromosome representation is a key factor in the application of genetic algorithms (GA) to portfolio optimization problems, as it determines how investment 
 decisions are modeled. In the following, we would like to introduce different methods. Binary encoding is the most historically 
 known and well-researched method. Solutions are represented as bit strings, i.e., as a sequence of zeros and ones. 
@@ -289,7 +290,7 @@ comes into place: [0, 0.4, 0.6]. In this proposed solution, it corresponds to th
 Combining both encodings (hybrid encoding) would allow us to represent the selection of stocks and their weighting in a chromosome. 
 This makes the solution decision-capable and directly interpretable for portfolio optimization.
 
-\subsection{Crossover Mechanisms}
+\subsubsection{Crossover Mechanisms}
 Crossover is one of the central genetic operators that plays a decisive role in creating new portfolios. It combines information from two "parent solutions" 
 to generate one or more "child solutions," ideally with better risk-return characteristics \cite[p. 8-9]{melanie_introduction_1999}.
 
@@ -314,7 +315,7 @@ Child = 0.6 * A + 0.4 * B = [0.28, 0.26, 0.46]
 Studies show that arithmetic crossover performs better and achieves better results in portfolio applications 
 than single-point crossover and two-point crossover \cite[p. 71]{dubinskas_investment_2017} & \cite[p. 152]{sefiane_portfolio_2012}.
 
-\subsection{Mutation}
+\subsubsection{Mutation}
 In addition to crossover, mutation is another essential genetic operator. While crossover combines existing information, 
 mutation is responsible for introducing new genetic diversity. It prevents the algorithm from getting stuck in a local optimum 
 and increases the chances of finding the global optimum \cite[p. 129-130]{melanie_introduction_1999} & \cite[p. 471]{kalayci_review_2017}.
@@ -336,7 +337,7 @@ Mutation is therefore an important tool for ensuring that the search space is ex
 Choosing the right type of mutation can have a significant impact on the speed and quality of optimization \cite{rajakumar_static_2013}, \cite[p. 8 & 129-130]{melanie_introduction_1999} & \cite[p. 471]{kalayci_review_2017}.
 
 
-\subsection{Fitness function and fitness factors}
+\subsubsection{Fitness function and fitness factors}
 In the context of portfolio theory and the application of genetic algorithms (GA), the choice of a suitable fitness function is of central importance, 
 as it ultimately determines which solution is preferred for further development in the search process. A simple option is a return-based fitness function, 
 where the goal is solely to maximize the expected portfolio return. In practice, however, more complex approaches that consider various goals and framework 

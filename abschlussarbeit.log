@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.10.19)  20 OCT 2025 19:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.10.19)  20 OCT 2025 19:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1212,10 +1212,6 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 
-Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 257.
-
-
 LaTeX Warning: Citation `li_application_2022' on page 15 undefined on input line 261.
 
 /Users/emily/Uni/5. Semester/Projektpraktikum/Abgabe/Final/Latexvorlage-Arbeit--1-/abschlussarbeit.tex:261: Misplaced alignment tab character &.
@@ -1324,11 +1320,11 @@ LaTeX Warning: Citation `fu_adopting_2013' on page 16 undefined on input line 29
 
 
 
-/Users/emily/Uni/5. Semester/Projektpraktikum/Abgabe/Final/Latexvorlage-Arbeit--1-/abschlussarbeit.tex:301: Misplaced alignment tab character &.
+/Users/emily/Uni/5. Semester/Projektpraktikum/Abgabe/Final/Latexvorlage-Arbeit--1-/abschlussarbeit.tex:300: Misplaced alignment tab character &.
 <inserted text> KAPITEL\ 3. \ METHODOLOGY &
                                             ALGORITHMS
-l.301 A
-       n extension of this is the two-point or multi-point crossover. Here, ...
+l.300 
+      
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -1382,11 +1378,11 @@ LaTeX Warning: Citation `brzek_exploration-driven_2025' on page 17 undefined on 
 LaTeX Warning: Citation `rajakumar_static_2013' on page 17 undefined on input line 329.
 
 
-LaTeX Warning: Citation `rajakumar_static_2013' on page 17 undefined on input line 334.
-
-
 
 [17]
+
+LaTeX Warning: Citation `rajakumar_static_2013' on page 18 undefined on input line 334.
+
 
 LaTeX Warning: Citation `rajakumar_static_2013' on page 18 undefined on input line 337.
 
@@ -1423,11 +1419,11 @@ LaTeX Warning: Citation `soldatos_big_2022' on page 18 undefined on input line 3
 
 
 
-/Users/emily/Uni/5. Semester/Projektpraktikum/Abgabe/Final/Latexvorlage-Arbeit--1-/abschlussarbeit.tex:353: Misplaced alignment tab character &.
+/Users/emily/Uni/5. Semester/Projektpraktikum/Abgabe/Final/Latexvorlage-Arbeit--1-/abschlussarbeit.tex:351: Misplaced alignment tab character &.
 <inserted text> KAPITEL\ 3. \ METHODOLOGY &
                                             ALGORITHMS
-l.353 \chapter
-              {4.	Portfolio Optimization Implementation}
+l.351 
+      
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
 simple: Just type `I\&' now. But if some right brace
@@ -1436,16 +1432,23 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 [18]
+
+[19]
+
+[20
+
+
+]
 Kapitel 4.
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 354.
 
 
-LaTeX Warning: Citation `mangram_simplified_2013' on page 19 undefined on input line 355.
+LaTeX Warning: Citation `mangram_simplified_2013' on page 21 undefined on input line 355.
 
 
-LaTeX Warning: Citation `markowitz_portfolio_1952' on page 19 undefined on input line 357.
+LaTeX Warning: Citation `markowitz_portfolio_1952' on page 21 undefined on input line 357.
 
 /Users/emily/Uni/5. Semester/Projektpraktikum/Abgabe/Final/Latexvorlage-Arbeit--1-/abschlussarbeit.tex:361: Missing $ inserted.
 <inserted text> 
@@ -1481,9 +1484,7 @@ you left one out. Proceed, with fingers crossed.
 
 
 
-[19
-
-
+[21
 
 ]
 /Users/emily/Uni/5. Semester/Projektpraktikum/Abgabe/Final/Latexvorlage-Arbeit--1-/abschlussarbeit.tex:374: Missing $ inserted.
@@ -1549,7 +1550,7 @@ I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-LaTeX Warning: Citation `elton_modern_2009' on page 20 undefined on input line 399.
+LaTeX Warning: Citation `elton_modern_2009' on page 22 undefined on input line 399.
 
 /Users/emily/Uni/5. Semester/Projektpraktikum/Abgabe/Final/Latexvorlage-Arbeit--1-/abschlussarbeit.tex:410: Missing $ inserted.
 <inserted text> 
@@ -1585,7 +1586,7 @@ you left one out. Proceed, with fingers crossed.
 
 
 
-[20]
+[22]
 /Users/emily/Uni/5. Semester/Projektpraktikum/Abgabe/Final/Latexvorlage-Arbeit--1-/abschlussarbeit.tex:418: Missing $ inserted.
 <inserted text> 
                 $
@@ -1627,7 +1628,7 @@ I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-LaTeX Warning: Citation `merton_analytic_1972' on page 21 undefined on input line 424.
+LaTeX Warning: Citation `merton_analytic_1972' on page 23 undefined on input line 424.
 
 /Users/emily/Uni/5. Semester/Projektpraktikum/Abgabe/Final/Latexvorlage-Arbeit--1-/abschlussarbeit.tex:425: Missing $ inserted.
 <inserted text> 
@@ -1651,7 +1652,7 @@ I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-LaTeX Warning: Citation `elton_modern_2009' on page 21 undefined on input line 427.
+LaTeX Warning: Citation `elton_modern_2009' on page 23 undefined on input line 427.
 
 
 /Users/emily/Uni/5. Semester/Projektpraktikum/Abgabe/Final/Latexvorlage-Arbeit--1-/abschlussarbeit.tex:428: LaTeX Error: Bad math environment delimiter.
@@ -1912,13 +1913,13 @@ I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-LaTeX Warning: Citation `merton_analytic_1972' on page 21 undefined on input line 464.
+LaTeX Warning: Citation `merton_analytic_1972' on page 23 undefined on input line 464.
 
 
 
-[21]
+[23]
 
-LaTeX Warning: Citation `elton_modern_2009' on page 22 undefined on input line 467.
+LaTeX Warning: Citation `elton_modern_2009' on page 24 undefined on input line 467.
 
 
 /Users/emily/Uni/5. Semester/Projektpraktikum/Abgabe/Final/Latexvorlage-Arbeit--1-/abschlussarbeit.tex:474: Package inputenc Error: Keyboard character used is undefined
@@ -1947,7 +1948,7 @@ You need to provide a definition with \DeclareInputText
 or \DeclareInputMath before using this key.
 
 
-LaTeX Warning: Citation `soldatos_big_2022' on page 22 undefined on input line 482.
+LaTeX Warning: Citation `soldatos_big_2022' on page 24 undefined on input line 482.
 
 /Users/emily/Uni/5. Semester/Projektpraktikum/Abgabe/Final/Latexvorlage-Arbeit--1-/abschlussarbeit.tex:485: Missing $ inserted.
 <inserted text> 
@@ -1977,7 +1978,7 @@ Overfull \hbox (69.64583pt too wide) in paragraph at lines 484--487
 
 
 
-[22]
+[24]
 /Users/emily/Uni/5. Semester/Projektpraktikum/Abgabe/Final/Latexvorlage-Arbeit--1-/abschlussarbeit.tex:492: Missing $ inserted.
 <inserted text> 
                 $
@@ -2037,11 +2038,11 @@ I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-LaTeX Warning: Citation `miller_genetic_1995' on page 23 undefined on input line 511.
+LaTeX Warning: Citation `miller_genetic_1995' on page 25 undefined on input line 511.
 
 
 
-[23]
+[25]
 
 /Users/emily/Uni/5. Semester/Projektpraktikum/Abgabe/Final/Latexvorlage-Arbeit--1-/abschlussarbeit.tex:514: Package inputenc Error: Keyboard character used is undefined
 (inputenc)                in inputencoding `latin1'.
@@ -2095,10 +2096,10 @@ You need to provide a definition with \DeclareInputText
 or \DeclareInputMath before using this key.
 
 
-LaTeX Warning: Citation `melanie_introduction_1999' on page 24 undefined on input line 516.
+LaTeX Warning: Citation `melanie_introduction_1999' on page 26 undefined on input line 516.
 
 
-LaTeX Warning: Citation `melanie_introduction_1999' on page 24 undefined on input line 519.
+LaTeX Warning: Citation `melanie_introduction_1999' on page 26 undefined on input line 519.
 
 /Users/emily/Uni/5. Semester/Projektpraktikum/Abgabe/Final/Latexvorlage-Arbeit--1-/abschlussarbeit.tex:519: Misplaced alignment tab character &.
 l.519 ...[p. 129-130]{melanie_introduction_1999} &
@@ -2111,13 +2112,13 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 
-LaTeX Warning: Citation `kalayci_review_2017' on page 24 undefined on input line 519.
+LaTeX Warning: Citation `kalayci_review_2017' on page 26 undefined on input line 519.
 
 
-LaTeX Warning: Citation `rajakumar_static_2013' on page 24 undefined on input line 520.
+LaTeX Warning: Citation `rajakumar_static_2013' on page 26 undefined on input line 520.
 
 
-LaTeX Warning: Citation `rajakumar_static_2013' on page 24 undefined on input line 522.
+LaTeX Warning: Citation `rajakumar_static_2013' on page 26 undefined on input line 522.
 
 /Users/emily/Uni/5. Semester/Projektpraktikum/Abgabe/Final/Latexvorlage-Arbeit--1-/abschlussarbeit.tex:527: Missing $ inserted.
 <inserted text> 
@@ -2149,7 +2150,7 @@ I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-LaTeX Warning: Citation `deb_fast_2002' on page 24 undefined on input line 530.
+LaTeX Warning: Citation `deb_fast_2002' on page 26 undefined on input line 530.
 
 /Users/emily/Uni/5. Semester/Projektpraktikum/Abgabe/Final/Latexvorlage-Arbeit--1-/abschlussarbeit.tex:532: Missing $ inserted.
 <inserted text> 
@@ -2166,7 +2167,7 @@ Overfull \hbox (2075.5231pt too wide) in paragraph at lines 529--532
 
 
 
-[24]
+[26]
 /Users/emily/Uni/5. Semester/Projektpraktikum/Abgabe/Final/Latexvorlage-Arbeit--1-/abschlussarbeit.tex:533: Missing $ inserted.
 <inserted text> 
                 $
@@ -2216,9 +2217,9 @@ Overfull \hbox (1954.66808pt too wide) in paragraph at lines 537--541
 
 
 
-[25]
+[27]
 
-[26]
+[28]
 Kapitel 5.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
@@ -2241,13 +2242,13 @@ Package hyperref Warning: Difference (2) between bookmark levels is greater
 (hyperref)                than one, level fixed on input line 564.
 
 
-LaTeX Warning: Citation `mangram_simplified_2013' on page 27 undefined on input line 568.
+LaTeX Warning: Citation `mangram_simplified_2013' on page 29 undefined on input line 568.
 
 
-LaTeX Warning: Citation `mangram_simplified_2013' on page 27 undefined on input line 570.
+LaTeX Warning: Citation `mangram_simplified_2013' on page 29 undefined on input line 570.
 
 
-LaTeX Warning: Citation `melanie_introduction_1999' on page 27 undefined on input line 572.
+LaTeX Warning: Citation `melanie_introduction_1999' on page 29 undefined on input line 572.
 
 
 /Users/emily/Uni/5. Semester/Projektpraktikum/Abgabe/Final/Latexvorlage-Arbeit--1-/abschlussarbeit.tex:573: Package inputenc Error: Keyboard character used is undefined
@@ -2303,7 +2304,7 @@ or \DeclareInputMath before using this key.
 
 
 
-[27
+[29
 
 
 
@@ -2422,7 +2423,7 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-[28]
+[30]
 /Users/emily/Uni/5. Semester/Projektpraktikum/Abgabe/Final/Latexvorlage-Arbeit--1-/abschlussarbeit.tex:604: Missing $ inserted.
 <inserted text> 
                 $
@@ -2462,24 +2463,13 @@ you left one out. Proceed, with fingers crossed.
 
 
 
-[29]
-
-[30
-
-
-]
-Kapitel 6.
-
-
-[31
-
-]
+[31]
 
 [32
 
 
 ]
-Kapitel 7.
+Kapitel 6.
 
 
 [33
@@ -2487,6 +2477,17 @@ Kapitel 7.
 ]
 
 [34
+
+
+]
+Kapitel 7.
+
+
+[35
+
+]
+
+[36
 
 
 ]
@@ -2587,7 +2588,7 @@ or \DeclareInputMath before using this key.
 
 
 
-[35
+[37
 
 ]
 
@@ -2682,11 +2683,11 @@ up above has ended a previous alignment prematurely,
 you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
-[36]
+[38]
 
-[37]
+[39]
 
-[38
+[40
 
 
 ]
@@ -2709,11 +2710,11 @@ might try typing `S' now just to see what is salvageable.
 
 
 
-[39
+[41
 
 ]
 
-[40
+[42
 
 
 ]
@@ -2723,11 +2724,11 @@ No file abschlussarbeit.lof.
 
 
 
-[41
+[43
 
 ]
 
-[42
+[44
 
 ]
 No file abschlussarbeit.lot.
@@ -2736,7 +2737,7 @@ No file abschlussarbeit.lot.
 
 (./abschlussarbeit.bbl)
 
-[43
+[45
 
 
 
@@ -2759,21 +2760,21 @@ Package rerunfilecheck Warning: File `abschlussarbeit.out' has changed.
 
 Package rerunfilecheck Info: Checksums for `abschlussarbeit.out':
 (rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  27FAA5B5A6C3EDD9B423641F4BE043D5;6081.
+(rerunfilecheck)             After:  6372434540A65E4F9F24F4AAA09A977F;7198.
  ) 
 Here is how much of TeX's memory you used:
- 25902 strings out of 473190
- 471173 string characters out of 5715799
+ 25904 strings out of 473190
+ 471207 string characters out of 5715799
  924713 words of memory out of 5000000
  48569 multiletter control sequences out of 15000+600000
  577441 words of font info for 78 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  105i,8n,107p,1028b,474s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx2074.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfsl1200.pfb>
-Output written on abschlussarbeit.pdf (43 pages, 371468 bytes).
+Output written on abschlussarbeit.pdf (45 pages, 373812 bytes).
 PDF statistics:
- 392 PDF objects out of 1000 (max. 8388607)
- 299 compressed objects within 3 object streams
- 103 named destinations out of 1000 (max. 500000)
+ 401 PDF objects out of 1000 (max. 8388607)
+ 305 compressed objects within 4 object streams
+ 105 named destinations out of 1000 (max. 500000)
  18 words of extra memory for PDF output out of 10000 (max. 10000000)
 

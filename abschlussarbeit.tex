@@ -122,7 +122,7 @@ ghhhghg
 Analyzing financial markets and optimizing portfolios is a key challenge affecting not only organizations such as banks and companies, 
 but also private individuals \cite{salo_fifty_2024}. Nevertheless, 
 traditional models are reaching their limits due to the increasing availability of large amounts of high-frequency market data and unstructured information, 
-such as that found in company reports or company news \cite{zhang_novel_2023} & \cite{guo_textual_2016}.
+such as that found in company reports or company news \cite{zhang_novel_2023} \& \cite{guo_textual_2016}.
 
 One of the most important works of modern portfolio theory (MPT) is Harry Markowitz's 1952 essay, 
 "Portfolio Selection," for which he received a Nobel Prize. The essay deals with achieving a favorable balance between risk and return. 
@@ -172,7 +172,7 @@ The end result is a solution that has the highest fitness in terms of the specif
 A genetic algorithm can accommodate multiple input variables. In the financial sector, these variables could include asset prices, dividends, volatility, 
 correlation parameters, and diverse asset breakdowns such as currencies, regions, asset classes, and credit ratings \cite[p. 204]{soldatos_big_2022}. 
 Chromosomes represent potential solution candidates. In this context, a chromosome could be a portfolio allocation, 
-with each gene describing a share of a particular asset \cite[p. 204]{soldatos_big_2022} & \cite[p. 7]{melanie_introduction_1999}. 
+with each gene describing a share of a particular asset \cite[p. 204]{soldatos_big_2022} \& \cite[p. 7]{melanie_introduction_1999}. 
 
 Each candidate solution is evaluated using a fitness function, which indicates how well the solution meets the optimization goal. 
 One way to evaluate fitness is by combining expected return and variance \cite[p. 206]{soldatos_big_2022}.
@@ -190,7 +190,7 @@ Mutation: Individual genes are randomly altered to generate new solutions and pr
 \cite[p. 8]{melanie_introduction_1999}
 
 By repeatedly executing the genetic algorithm, a population is created over several generations that iteratively develops toward better solutions. 
-The strength of this method lies in its ability to solve complex problems and demonstrate robustness \cite[p. 27]{melanie_introduction_1999} & \cite[p. 213]{soldatos_big_2022}.
+The strength of this method lies in its ability to solve complex problems and demonstrate robustness \cite[p. 27]{melanie_introduction_1999} \& \cite[p. 213]{soldatos_big_2022}.
 
 \subsection{Variants and extensions}
 There are numerous extensions to the basic genetic algorithm that increase its efficiency and stability. 
@@ -225,7 +225,7 @@ areas of the search space, while mutation reduces the risk of getting stuck in l
 
 Despite these advantages, GAs also have clear limitations. They do not guarantee a global optimum, but at best an approximately optimal solution. 
 The quality of the results depends on parameters such as population size, mutation rate, and number of generations. For very large or complex problems, 
-the computational effort can be high, as many chromosomes must be evaluated over numerous generations in order to adequately cover the search space \cite[p. 88]{melanie_introduction_1999} & \cite{osman_introduction_1995}.
+the computational effort can be high, as many chromosomes must be evaluated over numerous generations in order to adequately cover the search space \cite[p. 88]{melanie_introduction_1999} \& \cite{osman_introduction_1995}.
 
 Despite the many advantages of genetic algorithms, there are some key limitations that must be taken into account when applying them. 
 One important aspect is the selection of the initial population. The size and composition of the initial population has a significant 
@@ -258,9 +258,9 @@ Author: Emily Zerbe
 \subsection{Introduction}
 Genetic algorithms (GAs) are among the most important methods of evolutionary computation and are increasingly being used in finance. 
 They offer particular advantages in portfolio optimization, as they can solve nonlinear, high-dimensional problems with restrictions 
-that cannot be adequately addressed using traditional methods such as Markowitz optimization \cite{li_application_2022} & \cite{kalayci_review_2017}. 
+that cannot be adequately addressed using traditional methods such as Markowitz optimization \cite{li_application_2022} \& \cite{kalayci_review_2017}. 
 While Markowitz assumes a strict model with normal distribution assumptions and quadratic optimization, GAs can be used to map flexible, 
-complex objective functions and more realistic market conditions \cite{chang_heuristics_2000}, \cite{mangram_simplified_2013} & \cite[p. 206-207]{soldatos_big_2022}. 
+complex objective functions and more realistic market conditions \cite{chang_heuristics_2000}, \cite{mangram_simplified_2013} \& \cite[p. 206-207]{soldatos_big_2022}. 
 
 A genetic algorithm simulates the biological evolutionary process. Populations of “solutions” (portfolios) are gradually improved through selection, 
 crossover, and mutation. Fitness evaluation based on economic targets such as sharp ratio or risk means that advantageous portfolios are given 
@@ -313,12 +313,12 @@ Parent B = [0.4, 0.2, 0.4]
 Child = 0.6 * A + 0.4 * B = [0.28, 0.26, 0.46]
 
 Studies show that arithmetic crossover performs better and achieves better results in portfolio applications 
-than single-point crossover and two-point crossover \cite[p. 71]{dubinskas_investment_2017} & \cite[p. 152]{sefiane_portfolio_2012}.
+than single-point crossover and two-point crossover \cite[p. 71]{dubinskas_investment_2017} \& \cite[p. 152]{sefiane_portfolio_2012}.
 
 \subsection{Mutation}
 In addition to crossover, mutation is another essential genetic operator. While crossover combines existing information, 
 mutation is responsible for introducing new genetic diversity. It prevents the algorithm from getting stuck in a local optimum 
-and increases the chances of finding the global optimum \cite[p. 129-130]{melanie_introduction_1999} & \cite[p. 471]{kalayci_review_2017}.
+and increases the chances of finding the global optimum \cite[p. 129-130]{melanie_introduction_1999} \& \cite[p. 471]{kalayci_review_2017}.
 
 A simple form is uniform mutation, in which a randomly selected gene is changed within permissible limits. For example, 
 the weight of share B in a chromosome could be increased from 0.3 to 0.32, while the other weights would have to be adjusted 
@@ -334,7 +334,7 @@ of the search, when the solution is still far from optimal, in order to create a
 the mutation rate is reduced in order to achieve more finer results \cite[p. 181]{rajakumar_static_2013}.
 
 Mutation is therefore an important tool for ensuring that the search space is explored and genetic diversity is preserved. 
-Choosing the right type of mutation can have a significant impact on the speed and quality of optimization \cite{rajakumar_static_2013}, \cite[p. 8 & 129-130]{melanie_introduction_1999} & \cite[p. 471]{kalayci_review_2017}.
+Choosing the right type of mutation can have a significant impact on the speed and quality of optimization \cite{rajakumar_static_2013}, \cite[p. 8 & 129-130]{melanie_introduction_1999} \& \cite[p. 471]{kalayci_review_2017}.
 
 
 \subsection{Fitness function and fitness factors}
@@ -516,7 +516,7 @@ The resulting offspring is then normalized so that the weights again add up to o
 the characteristics of both parents and potentially offer better risk-return combinations \cite[p. 8-9]{melanie_introduction_1999}.
 \subsubsection{Mutation}
 Mutation also plays a central role, introducing random small changes in the portfolio weights. It prevents the algorithm from getting stuck in a local 
-optimum too early and ensures that new areas of the solution space continue to be explored \cite[p. 129-130]{melanie_introduction_1999} & \cite[p. 471]{kalayci_review_2017}. 
+optimum too early and ensures that new areas of the solution space continue to be explored \cite[p. 129-130]{melanie_introduction_1999} \& \cite[p. 471]{kalayci_review_2017}. 
 The mutation is applied with a probability that gradually decreases over the course of generations, a concept known as the adaptive mutation rate \cite[p. 181]{rajakumar_static_2013}. 
 The mutation rate starts at 0.2 and decreases linearly to 0.05 as the algorithm progresses. This means that early in the search, there is a lot of exploration, followed later 
 by a targeted refinement of the best solutions \cite[p. 181]{rajakumar_static_2013}. Mathematically, the mutation rate for generation t is calculated as:
